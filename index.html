@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TofferLeel - Cybersecurity Resume</title>
+    <style>
+        :root {
+            --primary-color: #1a1f3d;
+            --secondary-color: #0e76a8;
+            --accent-color: #46c496;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-bg);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px 8px 0 0;
+            margin-top: 20px;
+        }
+        
+        .profile-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        main {
+            background-color: white;
+            padding: 30px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .project h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .highlights {
+            margin-top: 15px;
+        }
+        
+        .highlights li {
+            margin-bottom: 8px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .highlights li:before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .dark-mode-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-icon {
+                width: 120px;
+                height: 120px;
+                font-size: 48px;
+            }
+            
+            main {
+                padding: 20px;
+            }
+        }
+        
+        /* Dark mode styles */
+        .dark-mode {
+            --text-color: #e6e6e6;
+            --light-bg: #121212;
+            background-color: #121212;
+        }
+        
+        .dark-mode main {
+            background-color: #1e1e1e;
+            color: #e6e6e6;
+        }
+        
+        .dark-mode .project {
+            border-bottom: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-icon">TL</div>
+            <h1>TofferLeel</h1>
+            <div class="subtitle">Cybersecurity Enthusiast & Ethical Hacker</div>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Professional Summary</h2>
+                <p>Cybersecurity enthusiast with hands-on experience in security testing and hardware exploration. Skilled in using various security tools including Flipper Zero for RF analysis and penetration testing. Seeking to leverage technical skills and security knowledge to contribute to the cybersecurity field through ethical hacking and security analysis.</p>
+            </section>
+            
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="tech-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript (Basic)</span>
+                    <span class="skill-tag">DuckyScript</span>
+                    <span class="skill-tag">Flipper Zero</span>
+                    <span class="skill-tag">RFID/NFC Testing</span>
+                    <span class="skill-tag">Penetration Testing</span>
+                    <span class="skill-tag">Network Security</span>
+                    <span class="skill-tag">Vulnerability Assessment</span>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Security Projects & Experience</h2>
+                
+                <div class="project">
+                    <h3>Ethical Hacking & Penetration Testing</h3>
+                    <p>Self-directed security testing in controlled environments to understand vulnerabilities and security measures.</p>
+                    <ul class="highlights">
+                        <li>Utilized Flipper Zero to analyze and test RF protocols and security</li>
+                        <li>Performed controlled testing of RFID and NFC technologies</li>
+                        <li>Conducted security assessments on personal networks to identify vulnerabilities</li>
+                    </ul>
+                </div>
+                
+                <div class="project">
+                    <h3>Security Automation with Python</h3>
+                    <p>Developed Python scripts for security testing and automation.</p>
+                    <ul class="highlights">
+                        <li>Created scripts to automate security scans and testing procedures</li>
+                        <li>Developed tools for analyzing security logs and identifying anomalies</li>
+                        <li>Implemented basic security monitoring and alerting systems</li>
+                    </ul>
+                </div>
+                
+                <div class="project">
+                    <h3>Social Engineering & USB Security Research</h3>
+                    <p>Research and experimentation with USB security and social engineering techniques.</p>
+                    <ul class="highlights">
+                        <li>Explored USB security vulnerabilities using DuckyScript</li>
+                        <li>Studied and documented common social engineering attack vectors</li>
+                        <li>Developed countermeasures against basic security threats</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Technical Proficiencies</h2>
+                <ul class="highlights">
+                    <li><strong>Hardware Security Tools:</strong> Flipper Zero, RF analysis equipment</li>
+                    <li><strong>Programming:</strong> Python for security automation, HTML/CSS/JavaScript for web security testing</li>
+                    <li><strong>Security Testing:</strong> Vulnerability assessment, penetration testing fundamentals, security auditing</li>
+                    <li><strong>Security Concepts:</strong> Network security, authentication systems, encryption basics, social engineering</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Professional Goals</h2>
+                <p>Seeking opportunities in the cybersecurity field to apply and expand technical skills in ethical hacking, penetration testing, and security analysis. Committed to continuously learning new security techniques and staying current with evolving cyber threats and countermeasures.</p>
+                <ul class="highlights">
+                    <li>Obtain professional certifications in cybersecurity</li>
+                    <li>Develop expertise in advanced penetration testing methods</li>
+                    <li>Contribute to vulnerability research and responsible disclosure</li>
+                    <li>Specialize in hardware security and IoT device security</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌓</button>
+    
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
